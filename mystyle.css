@@ -6,6 +6,11 @@ html, body {
   background-color: #eee;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [id=content] {
+    width: 100%;
+  }
 #content {
   position: relative;
 }
@@ -15,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class=container] {
+    width: 100%;
+  }
 
 .container {
   max-width: 1000px;
@@ -22,6 +32,11 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class=grid] {
+    width: 100%;
+  }
 .grid {
   display: flex;
 }
@@ -95,6 +110,8 @@ nav, #nav-bar {
     margin: 15px 0;
     border: 0;
     background-color:orange;
+    font-size: 20px;
+    font-weight: 700; 
   }
   
   
@@ -138,7 +155,12 @@ nav, #nav-bar {
 
 
 
-
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [id=pricing] {
+      width: 100%;
+    }
+  }
 #pricing {
   margin-top: 60px;
   display: flex;
@@ -191,7 +213,7 @@ nav, #nav-bar {
 
 footer {
   margin-top: 30px;
-  background-color: gray;
+  background-color: #ddd;
   padding: 20px;
 }
   
